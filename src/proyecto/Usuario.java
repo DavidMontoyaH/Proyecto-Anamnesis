@@ -10,6 +10,7 @@ package proyecto;
  * @author sena
  */
 public class Usuario {
+    private Deporte deporte1;
     private String id;
     private String nombre;
     private String apellido;
@@ -18,9 +19,18 @@ public class Usuario {
     private String genero;
     private int telefono;
     
+    public void setDeporte1(Deporte deporte1Parametro){
+        this.deporte1=deporte1Parametro;    
+    }
+    public Deporte getDeporte1()
+    {
+        return this.deporte1;
+    }
+    
     public void setId(String idParametro){
         this.id=idParametro;    
     }
+    
     public String getId()
     {
         return this.id;
